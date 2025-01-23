@@ -1,0 +1,7 @@
+What is Sytem Design ?
+
+Set of Requirements 
+•	Decide Architecture
+•	Decide Components           How they interact with each other
+•	Decide Modules 
+
