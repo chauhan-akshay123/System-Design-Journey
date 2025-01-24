@@ -1,4 +1,6 @@
  DAY-1 (23 Jan 2025) ----> System Design Introduction
                       ----> How to approach System Design
                        ----> How do you know that you have build a good system
-                        ----> Relational Database-1
+                        ----> Relational Database-1 -> ACID Properties
+
+DAY-2 (24 Jan 2025) ----> Relational Database-2 -> Isolation levels -> Repeatable Reads, Read committed, Read uncommitted, Serializable
