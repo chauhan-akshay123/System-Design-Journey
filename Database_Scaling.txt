@@ -1,4 +1,4 @@
-Databases are the most important component of ay system out there.
+Databases are the most important component of any system out there.
 
 These techniques are applicable to most databases out there. -> relational + non-relational
 Scaling Database ----> 1. Horizontal Scaling, 2. Vertical Scaling
@@ -18,3 +18,22 @@ Horizontal Scaling: Read Replicas ---> always no. of read requests are higher th
                                      Connection Pooling -> Use a connection Pool to manage database connection efficiently. This helps avoid the overhead of creating new connections for each request
                                      Load Balancing -> Implement a load balancing mechanism to distribute read requests across the available slave nodes.
                                      Read-Write Splitting -> Configure your application to direct your read operations to a read replica and write operations to the master node.
+
+Replication --> Changes on one database needs to be sent to Replica to maintain Consistency.
+            --> Two Modes of Replication -> 1. Synchronous Replication
+                                         -> 2. Asynchronous Replication
+
+            --> Synchronous Replication -> The primary Server(master) writes data to its local storage, then sends the changes to all the replicas and wait for the acknowledgement from all the replicas then sends
+                                        -> acknowledgement of the write operation to the user.
+                                        -> Features -> Strong Consistency, Slower writes (Due to wait), high data integrity, lower throughput, zero replication lag
+
+            --> Asynchronous Replication -> The primary Server (Master) writes data to its local storage and sends acknowledgement to the user immediately without waiting to write on replicas, changes are made to 
+                                         -> replicas after some time.
+                                         -> Features -> Fatser writes, higher throughput, data loss risk, some replicatiob lag
+
+Sharding ---> Because one node cannot handle the data/load we split it into multiple exclusive subsets writes on a particular row/document will go to one particular shard.
+         ---> This way we scale our overall database load.
+         ---> "Shards are independent no replication btw them" 
+         ---> API server needs to know whom to connect to get things done. (Connection Object)
+         ---> Each shard has its own replica (if needed)
+
