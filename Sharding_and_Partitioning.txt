@@ -1,1 +1,22 @@
+Sharding --> It is a database partitioning technique where largs dataset is divided into smaller, more manageable subsets called "Shards"
+         --> These Shards are then distributed across multiple servers, allowing for horizontal scaling of the database.
+         --> Key Features -> Scalability, parallelism, Improved Availability, Reduced load on single server
 
+ Examples --> "Social Media Platforms" -> Platforms like Facebook, Twitter, and Instagram use sharding to handle massive amounts of user data, posts, and interactions. 
+              User data, for instance, might be sharded based 
+              on user IDs or location.
+
+              "E-Commerce" ->  Large online retailers like Amazon and eBay shard their product catalogs to improve search performance and handle high traffic volumes. 
+                               Products might be sharded based on categories, brands, or geographic location. 
+
+Partitioning --> It is a database technique where a single table is divided into smaller, more manageable subsets called "partitions". 
+             --> Unlike sharding which distributes data across multiple servers, partitioning typically occurs within a single database server
+             --> Key Features -> Improved Query performance, Simplified maintenance, Enhanced data management 
+
+Examples --> "Time Series Data" -> Partitioning time series data (e.g., stock prices, sensor readings) by date or time range allows for efficient querying of recent data 
+                                   while older data can be archived or moved to cheaper storage.
+
+             "Large Tables" -> Partitioning large tables with millions or billions of rows can significantly improve query performance and reduce the impact of data growth on database performance.
+
+             "Data Warehousing" -> artitioning is commonly used in data warehouses to optimize data loading, querying, and analysis tasks.
+  
