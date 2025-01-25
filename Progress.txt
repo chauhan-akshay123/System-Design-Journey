@@ -5,4 +5,4 @@
 
 DAY-2 (24 Jan 2025) ----> Relational Database-2 -> Isolation levels -> Repeatable Reads, Read committed, Read uncommitted, Serializable
 
-DAY-3 (25 Jan 2025) ----> Scaling Databases
+DAY-3 (25 Jan 2025) ----> Scaling Databases -> Horizontal, Vertical , Sharding and Partitioning
