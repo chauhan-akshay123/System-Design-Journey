@@ -1,0 +1,20 @@
+Databases are the most important component of ay system out there.
+
+These techniques are applicable to most databases out there. -> relational + non-relational
+Scaling Database ----> 1. Horizontal Scaling, 2. Vertical Scaling
+
+Vertical Scaling ---> add more CPU, RAM, DISK to the database                      
+                 ---> requires downtime during reboot
+                 ---> gives you ability to handle "Scale", more load
+                 ---> vertical scaling has a physical hardware limitation
+
+Horizontal Scaling: Read Replicas ---> always no. of read requests are higher than write
+                                  ---> you move reads to other database so tha "master" is free to do writes
+                                  ---> "Master" Db handles all the write requests, and "Slaves" are there for read requests
+                                  ---> Your API server should know which Db to connect to get things done. --->  for this you will setup different connection of Dbs objects to perform specific task: read/write: slave/master
+                                    ---> Ways: 1. Connection Pooling, 2. Load Balancing, 3. Read/Write Splitting
+
+
+                                     Connection Pooling -> Use a connection Pool to manage database connection efficiently. This helps avoid the overhead of creating new connections for each request
+                                     Load Balancing -> Implement a load balancing mechanism to distribute read requests across the available slave nodes.
+                                     Read-Write Splitting -> Configure your application to direct your read operations to a read replica and write operations to the master node.
