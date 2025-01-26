@@ -1,1 +1,15 @@
+Document Database ---> Stores data in flexible, self describing documents (often JSON-like), No rigid schema required
+                       Ideal for applications with complex, hierarchical data
+                       Ex -> MongoDB
 
+Key-Value Database ---> Stores data as a key-value pairs, simple and fast for basic data storage
+                        Ideal for caching, session management, and storing small, frequently accessed data
+                        EX -> Redis, Amazon DynamoDB
+
+Graph Database ---> Stores data as nodes (entities) and edges (relationships) 
+                    Ideal for modeling complex, knowledge graphs, and recommendation systems
+                    EX -> Neo4j 
+                    In Neo4j we use cypher query language
+
+                                                            
+                  
