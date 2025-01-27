@@ -1,4 +1,4 @@
-Every database is designed to solve a particular probelm really well.
+Every database is designed to solve a particular problem really well.
 
 If data can fit on a single node
 
