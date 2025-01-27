@@ -1,0 +1,29 @@
+Every database is designed to solve a particular probelm really well.
+
+If data can fit on a single node
+
+1. You need strong consisttency? & data correctness is critical 
+   --> go for "relational database"
+
+2. You need complex queries and aggregations
+   --> go for "relational database"
+
+3. Your access is Key-Value based but need it to be really fast
+   --> go for "Redis"
+
+4. You need advanced Data Structures and Algorithms
+   --> go for "Redis"
+
+If data cannot fit on one node
+
+1. If you have expertise in SQL and can do manual sharding
+   --> drop constraints and go for "Relational Database"
+
+2. You have simple Key-Value based access
+   --> go for key-value store like DynamoDB, MongoDB
+
+3. You require sophisticated graph algorithms
+   --> go for DB like "Neo4j"
+
+4. You have nothing specific but want it to future proof
+   --> go for document DB like "MongoDB"
