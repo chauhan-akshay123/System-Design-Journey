@@ -1,0 +1,41 @@
+Cache sits btw the API server and the database.
+There are two ways to populate the cache
+
+# Lazy Population --> Populates the data on demand. This means that data is only fetched from underlying data source(like database) and stored in a cache when a request specifically asks for it.
+
+Ex- > Caching Blogs -> Fetching a blog from db is expensive hence, when someone accesses it we fetch from DB and cache it on "Redis" -> subsequent requests are served from cache
+
+      Scenario: An e-commerce website has a product catalog.
+      Lazy Population: When a user searches for a specific product, the system first checks the cache. If the product information is not found in the cache, 
+                       it fetches the data from the database, stores it in the cache, and then returns it to the user.
+
+      Advantages: Efficient Memory Usage: Only frequently accessed data is stored in the cache, minimizing memory consumption.
+                  Reduced Overhead: No unnecessary data is loaded into the cache, reducing overhead and improving overall system performance.
+
+      Disadvantage: Initial Delay: Can introduce a slight delay for the first request for a particular piece of data, as it needs to be fetched from the database and stored in the cache.
+
+# Eager Population --> proactively loads data into the cache, even before it's explicitly requested. This can be done periodically or based on certain triggers (e.g., at startup, during off-peak hours).
+   1. Write go to both database and cache in the same request call
+      Ex-> Live Cricket score
+           --> Thousands of people are watching cricket score, yoou will be serving it from cache
+               so, why not update cacahe and DB at once and save the cache miss.
+
+   2> Proactively push data to the cache
+           --> because you anticipate the need 
+               ex- > when a celebrity tweets/posts something
+                     when account with 100,000 followers post something. Proactively push it to the cache, we will anyway need it we save a cache miss.
+
+      Advantages: Faster Response Times: Reduces latency for frequently accessed data since it's already available in the cache.
+                  Improved User Experience: Provides a smoother and more responsive user experience, especially for frequently accessed content.
+
+      Disadvantage: Increased Memory Usage: Can consume more memory as it stores data that may not be frequently accessed.
+                    Potential for Stale Data: If data changes frequently, eager population might result in outdated data in the cache.
+
+Key Considerations:
+
+Data Access Patterns: Analyze your application's data access patterns to determine which population strategy is more suitable.
+Data Volatility: Consider how frequently the data changes. For highly volatile data, eager population might not be ideal.
+Cache Size and Memory Constraints: Evaluate the memory requirements of each strategy and ensure that the cache size is appropriate for your application's needs.
+
+
+
