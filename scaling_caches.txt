@@ -1,0 +1,9 @@
+Cache is just like a dattabase, hence scaling technique for a cache like Redis is similar to a regular database.
+
+--> Vertical Scaling -> Make your cache bigger to handle new data/load
+
+--> Horizontal Scaling - Replica (Scaling Reads) -> Some data replicated across multiple nodes so that reads could scale
+
+--> Horizontal Scaling - Sharding(Scaling writes) -> Data partitioned across multiple shards so that writes could scale
+                                                  -> Each shard can have a replica
+                                                  -> Shards are mutually exclusive
