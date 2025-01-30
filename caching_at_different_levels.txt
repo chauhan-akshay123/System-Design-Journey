@@ -1,1 +1,45 @@
+1. Client-Side Caching --> 
+Client-side caching stores frequently accessed data on the client side, such as in a browser or mobile device.
+•
+This type of caching is suitable for storing constant data like images, javascript files, and user information.
+•
+It is acceptable for client-side cached information to be stale.
+•
+Data cached client-side can be invalidated by time using an expiry.
+•
+Client-side caching can significantly improve performance because requests to the backend can be avoided.
+
+2. Content Delivery Networks (CDNs) -->
+•
+CDNs are a set of servers distributed across the world.
+•
+When a user makes a request, it goes to the nearest CDN server.
+•
+The CDN server checks if it has the requested data, and if so, returns it to the user.
+•
+If the CDN server does not have the requested data, it makes the same request to the origin server, caches the response, and returns the data to the user.
+•
+Like other caches, data on a CDN has an expiry set, after which the CDN deletes the data.
+•
+CDNs are useful for caching content such as live streaming videos, images, and audio.
+
+3. Remote Cache --> 
+
+Remote caches, such as Redis, are centralized caches that are commonly used by API servers to store frequently accessed data.
+•
+Every key stored in a remote cache should have an expiration to prevent memory leaks.
+•
+Remote caches store data in main memory, which is more expensive than other storage options.
+•
+Remote caches are relatively small compared to a database.
+
+4. Database Caching --> 
+
+Database caching avoids expensive database computations by storing the results.
+•
+For example, instead of computing total posts for a user each time, the total posts can be stored as a column and updated periodically.
+•
+This type of caching saves on expensive database queries and computations.
+
+
 
