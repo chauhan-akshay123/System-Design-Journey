@@ -7,7 +7,7 @@ Gain a strong understanding of system design principles, databases, caching, loa
 
 | 📂 Topic | ✅ Completed |
 |----------|------------|
-| **Introduction to System Design** | |
+| **Introduction to System Design** | ✅ |
 | ★ What is System Design? | |
 | ★ Why is it popular? | |
 | ★ Why understanding system design is important? | |
