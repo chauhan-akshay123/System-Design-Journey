@@ -8,50 +8,50 @@ Gain a strong understanding of system design principles, databases, caching, loa
 | 📂 Topic | ✅ Completed |
 |----------|------------|
 | **Introduction to System Design** | |
-| ★ What is System Design? | |
-| ★ Why is it popular? | |
-| ★ Why understanding system design is important? | |
-| ★ Side effects of system design | |
-| ★ What to do when designing a system? | |
-| ★ How to approach system design | |
-| ★ Breaking down problem statements into components | |
-| ★ Dissecting components into sub-components | |
-| ★ Key considerations for each sub-component | |
-| ★ Database and Caching | |
-| ★ Scaling and Fault Tolerance | |
-| ★ Asynchronous Processing | |
-| ★ Communication | |
-| ★ Component Properties: Scalable, Fault-Tolerant, Available | |
-| **Databases** | |
-| ★ Relational Databases | |
-| ★ Key properties: Data consistency, durability, integrity | |
-| ★ ACID Properties | |
-| ★ Isolation Levels | |
-| ★ When to choose relational databases | |
-| ★ Scaling Databases | |
-| ★ Vertical Scaling | |
-| ★ Horizontal Scaling: Read Replicas | |
-| ★ Database Sharding | |
-| ★ Database Partitioning | |
-| ★ Advantages and Disadvantages of Sharding | |
-| ★ Non-Relational Databases | |
-| ★ Document Databases | |
-| ★ Key-Value Stores | |
-| ★ Graph Databases | |
-| ★ Picking the Right Database | |
-| **Caching** | |
-| ★ What is Caching? | |
-| ★ Examples of Caching (Google News, Auth Tokens, Live Stream) | |
-| ★ Eager Population of Caches | |
-| ★ Scaling Cache | |
-| ★ Content Delivery Networks (CDN) | |
-| ★ How CDNs work | |
-| ★ Remote Cache | |
-| ★ Database Caching | |
-| ★ When to Cache Data | |
+| ★ What is System Design? | ✅ |
+| ★ Why is it popular? | ✅ |
+| ★ Why understanding system design is important? | ✅ |
+| ★ Side effects of system design | ✅ |
+| ★ What to do when designing a system? | ✅ |
+| ★ How to approach system design | ✅ |
+| ★ Breaking down problem statements into components | ✅ |
+| ★ Dissecting components into sub-components | ✅ |
+| ★ Key considerations for each sub-component | ✅ |
+| ★ Database and Caching | ✅ |
+| ★ Scaling and Fault Tolerance | ✅ |
+| ★ Asynchronous Processing | ✅ |
+| ★ Communication | ✅ |
+| ★ Component Properties: Scalable, Fault-Tolerant, Available | ✅ |
+| **Databases** | ✅ |
+| ★ Relational Databases | ✅ |
+| ★ Key properties: Data consistency, durability, integrity | ✅ |
+| ★ ACID Properties | ✅ |
+| ★ Isolation Levels | ✅ |
+| ★ When to choose relational databases | ✅ |
+| ★ Scaling Databases | ✅ |
+| ★ Vertical Scaling | ✅ |
+| ★ Horizontal Scaling: Read Replicas | ✅ |
+| ★ Database Sharding | ✅ |
+| ★ Database Partitioning | ✅ |
+| ★ Advantages and Disadvantages of Sharding | ✅ |
+| ★ Non-Relational Databases | ✅ |
+| ★ Document Databases | ✅ |
+| ★ Key-Value Stores | ✅ |
+| ★ Graph Databases | ✅ |
+| ★ Picking the Right Database | ✅ |
+| **Caching** | ✅ |
+| ★ What is Caching? | ✅ |
+| ★ Examples of Caching (Google News, Auth Tokens, Live Stream) | ✅ |
+| ★ Eager Population of Caches | ✅ |
+| ★ Scaling Cache | ✅ |
+| ★ Content Delivery Networks (CDN) | ✅ |
+| ★ How CDNs work | ✅ |
+| ★ Remote Cache | ✅ |
+| ★ Database Caching | ✅ |
+| ★ When to Cache Data | ✅ |
 | **Message Brokers and Streams** | |
-| ★ Features of Message Brokers | |
-| ★ Message Streams | |
+| ★ Features of Message Brokers | ✅ |
+| ★ Message Streams | ✅ |
 | ★ Kafka | |
 | ★ Topics and Partitions | |
 | ★ Limitations | |
