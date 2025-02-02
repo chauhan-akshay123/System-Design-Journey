@@ -12,3 +12,5 @@ DAY-5 (27 Jan 2025) ----> Picking the right database, Caching
 DAY-6 (28 Jan 2025) ----> Populating and Scaling Caches,
 DAY-7 (29 Jan 2025) ----> Scaling Caches 
 DAY-8 (30 Jan 2025) ----> Caching at different levels
+DAY-9 (2 Feb 2025)  ----> Message Queues
+                     ---> Learned to implement message queue by coding (RabbitMQ)
